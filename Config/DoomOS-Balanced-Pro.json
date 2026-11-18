@@ -1,0 +1,28 @@
+{
+  "project": "DoomOS",
+  "edition": "Balanced Gaming Edition",
+  "sourceOS": "Windows 10 22H2 Pro",
+  "architecture": "amd64",
+  "minimumTargetRamGB": 4,
+  "storagePreference": "HDD compatible",
+  "cpuProfile": "low power dual core or better",
+  "graphics": "vendor driver determined per device",
+  "hardwareModel": "generic",
+  "windowsImageSelection": "Select installed image by verified Windows 10 Pro name, not hard-coded index",
+  "policy": {
+    "defender": "retain",
+    "firewall": "retain",
+    "windowsUpdate": "retain",
+    "microsoftStore": "retain",
+    "winRE": "retain",
+    "pagefile": "system managed",
+    "oneDrive": "optional",
+    "xboxGameBar": "optional",
+    "windowsSearch": "retain until tested",
+    "sysMain": "retain until tested",
+    "drivers": "no universal preintegration",
+    "diskPartitioning": "manual only",
+    "activation": "official license required"
+  },
+  "status": "phase-1 baseline configuration only; ISO not built or tested"
+}
