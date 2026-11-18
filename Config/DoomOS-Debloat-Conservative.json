@@ -1,0 +1,36 @@
+{
+  "profile": "DoomOS Balanced Gaming Edition - Conservative Debloat",
+  "source": "Windows 10 Pro 22H2 x64",
+  "version": "phase3-v1",
+  "removeProvisionedApps": [
+    "Microsoft.BingNews",
+    "Microsoft.BingWeather",
+    "Microsoft.GetHelp",
+    "Microsoft.Getstarted",
+    "Microsoft.MicrosoftSolitaireCollection",
+    "Microsoft.WindowsFeedbackHub",
+    "Microsoft.WindowsMaps"
+  ],
+  "preserve": [
+    "Microsoft.WindowsStore",
+    "Microsoft.StorePurchaseApp",
+    "Microsoft.DesktopAppInstaller",
+    "Microsoft.VCLibs",
+    "Microsoft.NET.Native.Framework",
+    "Microsoft.NET.Native.Runtime",
+    "Microsoft.UI.Xaml",
+    "Microsoft.XboxIdentityProvider",
+    "Microsoft.GamingServices",
+    "WinRE",
+    "Windows Defender",
+    "Windows Firewall",
+    "Windows Update",
+    "Windows Installer",
+    "SysMain",
+    "Windows Search"
+  ],
+  "optionalFeatures": "unchanged",
+  "drivers": "not integrated without verified PnP IDs",
+  "rollback": "backup WIM before editing",
+  "status": "not executed"
+}
