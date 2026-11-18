@@ -1,0 +1,34 @@
+{
+  "project": "DoomOS",
+  "edition": "Balanced Gaming Edition",
+  "target": "Windows 10 Pro 22H2 x64",
+  "profile": "Ultra-Light Balanced",
+  "ramGB": 4,
+  "storage": "HDD or SSD",
+  "isoCompression": "ESD recovery compression after tested WIM customization",
+  "installedOSCompression": "off by default; benchmark CompactOS before enabling on HDD/Celeron",
+  "idleRamGoalGB": "1.5–2.2 (non-guaranteed)",
+  "components": {
+    "defender": "keep",
+    "firewall": "keep",
+    "windowsUpdate": "keep",
+    "microsoftStore": "keep",
+    "winRE": "keep",
+    "directX": "keep",
+    "dotNet": "keep",
+    "windowsInstaller": "keep",
+    "pageFile": "system managed",
+    "sysMain": "test before changing",
+    "windowsSearch": "reduce indexing scope after measuring",
+    "xboxGameBar": "optional removal",
+    "consumerApps": "remove carefully from selected image"
+  },
+  "verification": [
+    "check source edition index with DISM",
+    "test VM first",
+    "measure boot time idle RAM and disk active time",
+    "confirm servicing and security",
+    "validate source and generated ISO hashes"
+  ],
+  "status": "configuration staged; ISO not built"
+}
